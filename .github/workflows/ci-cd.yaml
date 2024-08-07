@@ -23,4 +23,4 @@ jobs:
         run: 
           cd client && sh docker_frontend.sh ${{ github.run_number }}
           
-          cd ../server && docker_backend.sh ${{ github.run_number }}
+          cd ../server && sh docker_backend.sh ${{ github.run_number }}
